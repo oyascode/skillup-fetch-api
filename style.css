@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
 }
 
-.search {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -24,21 +24,26 @@ body {
   z-index: 3;
 }
 
-input {
+.header h1 {
+  color: rgb(153, 76, 5);
+  text-shadow: 0px 5px 5px 5px rgb(209, 156, 12), 2px 5px 10px 5px rgb(61, 58, 58);
+}
+
+/* input {
   padding: 0.5em;
   outline: none;
   font-size: 0.7rem; 
   min-width: 250px;  
-}
+} */
 
-.search-btn {
+/* .search-btn {
   padding: 0.5em 2em;
   margin-left: 0.5em ;
   cursor: pointer;
   background: linear-gradient(90deg, rgb(247, 183, 9), rgb(97, 1, 1));
   color: #fff;
   font-weight: 600;
-}
+} */
 
 .next {
   position: fixed;
@@ -46,25 +51,20 @@ input {
   right: 15px;
   padding: 0.5em 2em;
   cursor: pointer;
-  background: linear-gradient(90deg, rgb(247, 183, 9), rgb(97, 1, 1));
-  color: #fff;
-  font-weight: 600;
-}
-.previous {
-  position: fixed;
-  top: 90vh;
-  left: 15px;
-  padding: 0.5em 2em;
-  cursor: pointer;
-  background: linear-gradient(90deg, rgb(247, 183, 9), rgb(97, 1, 1));
-  color: #fff;
+  background: linear-gradient(90deg, rgb(247, 183, 9), rgb(185, 4, 4));
+  color:#000;
   font-weight: 600;
 }
 
+.next:hover {
+  opacity: 0.8;
+}
 .gallery {
-  width: 90%;
+  width: 70%;
   margin: 12vh auto;
-  /* background: red; */
+  background: rgb(213, 241, 252);
+  box-shadow: 0px 5px 5px 5px #ccc, 2px 5px 10px 5px #ccc;
+  padding: 3em;
   display: grid;
   grid-template-columns: repeat(4, 200px);
   gap: 10px;
@@ -87,20 +87,25 @@ input {
 }
 
 p {
-  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: 0.7rem;
+  margin-left: 5px;
+  font-weight: 700;
+  /* position: absolute;
   bottom: 5px;
-  color: #fff;
-  font-size: 0.8rem;
-  padding: 1em;
-  color: rgb(252, 193, 0);
+ 
+ 
+  color: rgb(252, 193, 0); */
 }
 
 a {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
   font-size: 0.9rem;
-  position: absolute;
+  margin-left: 5px;
+  /*position: absolute;
   top: 0;
   left: 0;
-  color: rgb(252, 193, 0);
-  font-weight: 700;
-  padding: 1em;
+  
+   */
 }
